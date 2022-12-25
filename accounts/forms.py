@@ -38,3 +38,14 @@ class UserChangeForm(forms.ModelForm):
     class Meta:
         model = User
         fields = ('email', 'phone', 'password', 'is_active', 'is_admin')
+
+
+# User login and registration
+class UserLoginForm(forms.Form):
+    email = forms.EmailField(widget=forms.EmailInput(
+        attrs={'class': 'form-control', 'placeholder': 'Email address'})
+    )
+    phone = PhoneNumberField(widget=forms.TextInput(attrs={'class': 'form-control', 'placeholder': 'Phone number'}))
+    password = forms.CharField(widget=forms.PasswordInput(
+        attrs={'class': 'form-control', 'placeholder': 'Your password'}
+    ))
