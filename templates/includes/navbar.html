@@ -17,6 +17,8 @@
                     <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">My Account</button>
                     <div class="dropdown-menu dropdown-menu-right">
                         <a href="{% url 'accounts:login' %}" class="dropdown-item" type="button">Sign in</a>
+                        <a href="{% url 'accounts:register' %}" class="dropdown-item" type="button">Sign up</a>
+                        <a href="{% url 'accounts:logout' %}" class="dropdown-item" type="button">Logout</a>
                     </div>
                 </div>
                 <div class="btn-group mx-2">
