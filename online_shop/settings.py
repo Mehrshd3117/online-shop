@@ -40,9 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Third party apps
     'phonenumber_field',
+    'mptt',
     # Local apps
     'accounts.apps.AccountsConfig',
     'home.apps.HomeConfig',
+    'product.apps.ProductConfig',
 ]
 
 MIDDLEWARE = [
